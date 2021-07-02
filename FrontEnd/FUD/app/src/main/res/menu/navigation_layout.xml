@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_pantry"
+            android:icon="@drawable/ic_pantry"
+            android:title="Pantry" />
+        <item
+            android:id="@+id/nav_grocery"
+            android:icon="@drawable/ic_grocery"
+            android:title="Grocery List" />
+        <item
+            android:id="@+id/nav_recipe"
+            android:icon="@drawable/ic_recipe"
+            android:title="Recipe" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat"
+            android:title="Chat" />
+        <item
+            android:id="@+id/nav_household"
+            android:icon="@drawable/ic_household"
+            android:title="Household" />
+    </group>
+</menu>

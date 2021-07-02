@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B4E3EE</color>
+    <color name="bubble">#B4E3EE</color>
+    <color name="colorPrimaryDark">#68B8D1</color>
+    <color name="colorAccent">#1C465A</color>
+    <color name="text">#000000</color>
+    <color name="dark_text">#FFFFFF</color>
+    <color name="medium_text">#FF444444</color>
+    <color name="background">#FFFFFF</color>
+    <color name="toolbar">#1C465A</color>
+
+    <color name="loginLight">#B4E3EE</color>
+    <color name="loginDark">#68B8D1</color>
+    <color name="LoginAccent">#1C465A</color>
+</resources>

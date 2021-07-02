@@ -1,0 +1,33 @@
+FUD Database
+
+Tables
+	Users
+		ID (Primary Key)
+		household (Foreign Key)
+		userPantry (Foreign Key)
+		groceryList (Foreign Key)
+		username
+		firstName
+		lastName
+		password
+		
+	Household
+		HouseholdID (Primary Key)
+		username (Foreign Key)
+		pantry 
+		roommates[]
+		
+	Pantry
+		PantryID (Primary Key)
+		
+		//Pull API to get categories
+		
+		dairy[]
+		meat[]
+		bread[]
+		
+	GroceryList
+		ListID (Primary Key)
+		ItemsList[] //Some type of data strucutrure
+		
+		//Pull API

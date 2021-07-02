@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityFragments.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_border"
+                    android:text="@string/welcome"
+                    android:textColor="@color/text"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_border"
+                    android:textColor="@color/text"
+                    android:textSize="40sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/pantry_icon"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_pantry_dark"
+            app:layout_constraintBottom_toTopOf="@+id/pantry"
+            app:layout_constraintEnd_toStartOf="@+id/grocery_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/pantry"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/pantry"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/recipe"
+            app:layout_constraintEnd_toStartOf="@+id/grocery"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pantry_icon" />
+
+
+        <ImageView
+            android:id="@+id/grocery_icon"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:clickable="true"
+            android:src="@drawable/ic_grocery_dark"
+            app:layout_constraintBottom_toTopOf="@+id/grocery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/pantry_icon"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+        <TextView
+            android:id="@+id/grocery"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/grocery_list"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/chat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/pantry"
+            app:layout_constraintTop_toBottomOf="@+id/grocery_icon" />
+
+
+        <ImageView
+            android:id="@+id/recipe_icon"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginTop="50dp"
+            android:clickable="true"
+            android:src="@drawable/ic_recipe_dark"
+            app:layout_constraintBottom_toTopOf="@+id/recipe"
+            app:layout_constraintEnd_toStartOf="@+id/chat_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pantry" />
+
+        <TextView
+            android:id="@+id/recipe"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/recipe"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/household"
+            app:layout_constraintEnd_toStartOf="@+id/chat"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pantry" />
+
+        <ImageView
+            android:id="@+id/chat_icon"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:clickable="true"
+            android:src="@drawable/ic_chat_dark"
+            app:layout_constraintBottom_toTopOf="@+id/chat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/recipe_icon"
+            app:layout_constraintTop_toBottomOf="@+id/grocery" />
+
+        <TextView
+            android:id="@+id/chat"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/chat"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/recipe"
+            app:layout_constraintTop_toBottomOf="@+id/grocery" />
+
+        <ImageView
+            android:id="@+id/household_icon"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginTop="50dp"
+            android:clickable="true"
+            android:src="@drawable/ic_household_dark"
+            app:layout_constraintBottom_toTopOf="@+id/household"
+            app:layout_constraintEnd_toStartOf="@+id/settings_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipe" />
+
+        <TextView
+            android:id="@+id/household"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/household"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settings"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipe" />
+
+        <ImageView
+            android:id="@+id/settings_icon"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="190dp"
+            android:clickable="true"
+            android:src="@drawable/ic_settings_dark"
+            app:layout_constraintBottom_toTopOf="@+id/settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/household_icon"
+            app:layout_constraintTop_toBottomOf="@+id/grocery" />
+
+        <TextView
+            android:id="@+id/settings"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/settings"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/household"
+            app:layout_constraintTop_toBottomOf="@+id/chat" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

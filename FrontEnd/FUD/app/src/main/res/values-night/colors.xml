@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="bubble">#222222</color>
+    <color name="colorPrimaryDark">#68B8D1</color>
+    <color name="colorAccent">#B4E3EE</color>
+    <color name="text">#FFFFFF</color>
+    <color name="medium_text">#FFCCCCCC</color>
+    <color name="dark_text">#000000</color>
+    <color name="background">#000000</color>
+    <color name="toolbar">#1C465A</color>
+</resources>

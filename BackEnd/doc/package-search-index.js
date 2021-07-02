@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.example.demo"},{"l":"com.example.demo.controller"},{"l":"com.example.demo.groceryList"},{"l":"com.example.demo.households"},{"l":"com.example.demo.item"},{"l":"com.example.demo.pantry"},{"l":"com.example.demo.users"},{"l":"com.example.demo.vo"},{"l":"com.example.mockito"}]

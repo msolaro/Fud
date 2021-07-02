@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppActivities.SettingsActivity"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="187dp"
+            android:layout_height="214dp"
+            android:layout_gravity="center"
+            android:paddingBottom="30dp"
+            app:srcCompat="@drawable/ic_account" />
+
+        <TextView
+            android:id="@+id/user_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/usrset"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <Switch
+            android:id="@+id/darkSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingLeft="20dp"
+            android:text="@string/dark"
+            android:textAlignment="textStart"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/chg_pass"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onChgPassClicked"
+            android:paddingLeft="20dp"
+            android:text="@string/change_pswrd"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/create_household2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onGenerateClicked"
+            android:paddingLeft="20dp"
+            android:text="@string/generate"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/create_household"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onCreateHouseClicked"
+            android:paddingLeft="20dp"
+            android:text="@string/create_house"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/add_household"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onJoinHouseClicked"
+            android:paddingLeft="20dp"
+            android:text="@string/join_house"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/leave_household"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onLeaveHouseClicked"
+            android:paddingLeft="20dp"
+            android:text="@string/del_house"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="center|clip_vertical"
+        android:onClick="onLogoutClicked"
+        android:text="@string/logout"
+        android:textColor="@color/dark_text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ToolBarStyle"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
